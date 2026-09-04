@@ -1,0 +1,1 @@
+# One Colorado SOS entity ID per line. Example format: 20101012345

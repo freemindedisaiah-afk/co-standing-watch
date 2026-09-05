@@ -1,26 +1,20 @@
 # Colorado standing watch
 
-Miss: a Colorado entity skips its Periodic Report.
+Not a storefront. Not a dry-run theater.
 
-What that costs: Noncompliant → Delinquent, **$50 late penalty** on top of the **$25** report, then **$100** to cure. After 400 days the name can get `delinquent` tacked on and become available to someone else.
+## What is live
+Daily automation checks IDs in `entities.txt` only.
+- File empty → output is EMPTY LIST. No fake company.
+- ID present → PING only if not Good Standing or window ≤ 30 days. Else QUIET.
+- Never files. Never logs into SOS.
 
-This repo is not a filing service and not legal advice. It is a watch.
+## How a real ID gets here
+1. Someone pays Square $49/year (link goes in PAYMENT.md when it exists).
+2. Checkout custom field: 11-digit Colorado SOS entity ID.
+3. Director or bot types ADD ID <number> after payment is visible in Square.
+4. That ID is appended to entities.txt.
 
-## What the bot does
+Do not use the operator's own LLC. Not required.
 
-Once a day it looks up each ID in `entities.txt` on the public Colorado SOS business search. It pings only if:
-
-- status is not Good Standing, or
-- the filing window is inside 30 days
-
-Otherwise: quiet.
-
-It does not file. It does not log into SOS.
-
-## Add an entity
-
-One 11-digit SOS ID per line in `entities.txt`.
-
-## Charge (when someone wants this)
-
-Square, **$49 / year / entity**. One alert stream. They still file the $25 report themselves.
+## Not this project
+Upwork, Freelancer, sheet-cleaner $500 page, Thousand Lines guestbook.

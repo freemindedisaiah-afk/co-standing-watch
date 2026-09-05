@@ -1,1 +1,2 @@
-# One Colorado SOS entity ID per line. Example format: 20101012345
+# No IDs. EMPTY LIST until a paid customer ID or director ADD ID.
+# Do not add strangers. Do not add Good Human Brands 20201357048.
